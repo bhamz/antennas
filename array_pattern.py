@@ -28,7 +28,7 @@ class rad_pattern(object):
         L = 50*self.N*self.spacing # plenty to see contructive pattern
         axes = np.linspace(-L/2,L/2,self.n)
         X,Y = np.meshgrid(axes,axes) # ortho axes for wave fn
-        phase = 0; position = 0; wavePattern = 0*X
+        phase = 0; position = 0; wavePattern = 0
         for ii in range(self.N): # add this many waves atop ea other
             dist = np.sqrt(((X+position)**2)+(Y**2)) # sorta yucky to have in same line as blow
             wavePattern += np.exp(1j*(self.k*dist-phase))
