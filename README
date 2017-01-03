@@ -1,0 +1,3 @@
+A program that plots antenna patterns created by linearly spaced and fed
+isotropic radiators, either by using an equation derived for this purpose or
+by plotting the constructive wave patterns for a more visual effect.
